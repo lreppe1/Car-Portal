@@ -1,0 +1,54 @@
+Test Case 1: Create a Booking
+1. Open http://localhost:5173
+2. Enter "John Doe" in the Name field
+3. Enter "john@email.com" in the Email field
+4. Enter "Toyota Camry" in the Car field
+5. Select a Pickup Date
+6. Select a Dropoff Date
+7. Enter "150" in Total Amount
+8. Click "Create Booking"
+9. Verify booking is successfully created
+
+--------------------------------------------------
+
+Test Case 2: Payment Flow
+1. Create a booking using valid details
+2. Proceed to payment
+3. Enter Stripe test card number 4242 4242 4242 4242
+4. Enter valid expiration date and CVV
+5. Click "Pay"
+6. Verify "Payment Successful" message is displayed
+
+--------------------------------------------------
+
+Test Case 3: Admin Login
+1. Click "Admin Login" in the navigation bar
+2. Enter admin username and password
+3. Click "Login"
+4. Verify user is redirected to Reports page
+
+--------------------------------------------------
+
+Test Case 4: View Reports
+1. Log in as admin
+2. Navigate to Reports page
+3. Verify Total Bookings is displayed
+4. Verify Paid Bookings count updates after payment
+5. Verify Total Revenue updates correctly
+
+--------------------------------------------------
+
+Test Case 5: Form Validation
+1. Open booking page
+2. Leave all fields empty
+3. Click "Create Booking"
+4. Verify validation error messages appear
+
+--------------------------------------------------
+
+Test Case 6: Navigation
+1. Open application
+2. Click "Book Car"
+3. Verify booking page loads
+4. Click "Admin Login"
+5. Verify login page loads
